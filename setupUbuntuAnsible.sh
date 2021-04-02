@@ -11,3 +11,4 @@ pip3 install ansible
 pip3 install winrm
 pip3 install requests-credssp
 
+export PATH=$PATH:~/.local/bin
