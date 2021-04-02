@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh-keygen -o -b 4096 -f "~/.ssh/id_rsa" -P ""
+ssh-keygen -o -b 4096 -f ~/.ssh/id_rsa -P ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 sudo apt update
