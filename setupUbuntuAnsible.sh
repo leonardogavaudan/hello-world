@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script must not be run with sudo or else ssh keys will be saved to /root
+
 ssh-keygen -o -b 4096 -f ~/.ssh/id_rsa -P ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
