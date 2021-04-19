@@ -2,8 +2,8 @@
 
 # Script must not be run with sudo or else ssh keys will be saved to /root
 
-ssh-keygen -o -b 4096 -f home/$USER/.ssh/id_rsa -P ""
-cat ~/.ssh/id_rsa.pub >> /home/$USER/.ssh/authorized_keys
+ssh-keygen -o -b 4096 -f /home/$USER/.ssh/id_rsa -P ""
+cat /home/$USER/.ssh/id_rsa.pub >> /home/$USER/.ssh/authorized_keys
 
 sudo apt update
 sudo apt install -y python3-pip
