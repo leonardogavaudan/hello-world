@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Script must not be run with sudo or else ssh keys will be saved to /root
 
-ssh-keygen -o -b 4096 -f /home/nukkai/.ssh/id_rsa -P ""
+sudo -u nukkai sh-keygen -o -b 4096 -f /home/nukkai/.ssh/id_rsa -P ""
 cat /home/nukkai/.ssh/id_rsa.pub >> /home/nukkai/.ssh/authorized_keys
 
 sudo apt update
