@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-sudo -u nukkai sh-keygen -o -b 4096 -f /home/nukkai/.ssh/id_rsa -P ""
-cat /home/nukkai/.ssh/id_rsa.pub >> /home/nukkai/.ssh/authorized_keys
+sudo -u nukkai sh-keygen -o -b 4096 -f ~/.ssh/id_rsa -P ""
+sudo -u nukkai cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 sudo apt update
 sudo apt install -y python3-pip
