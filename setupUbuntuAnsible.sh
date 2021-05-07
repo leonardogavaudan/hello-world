@@ -13,4 +13,4 @@ pip3 install ansible
 pip3 install winrm
 pip3 install requests-credssp
 
-echo "\nexport PATH=\$PATH:~/.local/bin" >> /home/nukkai/.bashrc
+echo "export PATH=\$PATH:~/.local/bin" >> /home/nukkai/.bashrc
