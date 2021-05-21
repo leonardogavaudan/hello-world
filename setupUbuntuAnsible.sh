@@ -4,9 +4,10 @@
 sudo -u nukkai ssh-keygen -o -b 4096 -f /home/nukkai/.ssh/id_rsa -P ""
 cat /home/nukkai/.ssh/id_rsa.pub >> /home/nukkai/.ssh/authorized_keys
 
+sudo apt-get clean
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y python3-pip
+sudo apt-get -f install -y python3-pip
 pip3 install pip --upgrade
 
 pip3 install ansible
